@@ -1,0 +1,10 @@
+header {border-bottom: 2px solid black; display: block; height: auto; text-align: center;}
+	header > h1 { font-size: 100px; display: inline-block; }
+	header > img { width: 140px; height: 140px; border: 2px solid black; float: right; border-radius: 50%; margin: 2%;  }
+
+aside { border-right: 2px solid black; width: 20%;}
+	h2 { font-size: 30px; margin-bottom: 25px; }
+
+section {}
+
+footer {}
