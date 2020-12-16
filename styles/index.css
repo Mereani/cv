@@ -18,9 +18,9 @@ header { border-bottom: 2px solid black; display: block; height: auto; text-alig
 	.container > section > .textDuMenu {margin: 10px;}
 	.container > section > .textDuMenu > .titre > h2 {font-size: 20px;}
 
-footer { height: auto; background-color: rgb(14, 89, 14); display: flex; justify-content: space-evenly;}
+footer { height: auto; background-color: rgb(14, 89, 14);}
 footer > .informations {}
-footer > .informations > .medias {}
+footer > .informations > .medias { display: flex; justify-content: space-evenly;}
 footer > .informations > .medias > a {}
 footer > .informations > .medias > a > img { height: 50px;}
 
