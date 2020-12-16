@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+   
 body{ background-image: url('../back.jpg'); animation: defile 5s infinite;}
 header { border-bottom: 2px solid black; display: block; height: auto; text-align: center;}
 	header > h1 { font-size: 80px; display: inline-block; font-family: 'Bungee Shade', cursive;}
 	header > img { width: 140px; height: 140px; border: 2px solid black; float: right; border-radius: 50%; margin: 10%;  }
 
-aside { border-right: 2px solid black; width: 20%;}
-	h2 { font-size: 30px; margin-bottom: 25px; }
+.container {display: flex; justify-content: space-between;}
+.container > aside { border-right: 2px solid black; width: 20%;}
+.container > aside > h2 { font-size: 30px; margin-bottom: 25px; }
 
-section {margin-bottom: 10px;}
-section > .carrousel { width: 640px; display: block; border: 2px solid black; margin: auto;}
-section > .carrousel > img {}
-section >.btn { display: flex; justify-content: space-evenly;}
-section >.btn > button { font-size: 15px; cursor: pointer;} 
+	.container >section {margin-bottom: 10px; margin-top: 10px;}
+	.container >section > .carrousel { width: 640px; display: block; border: 2px solid black; margin: auto;}
+	.container >section > .carrousel > img {}
+	.container >section >.btn { display: flex; justify-content: space-evenly;}
+	.container >section >.btn > button { font-size: 15px; cursor: pointer;} 
 
 footer { height: auto; background-color: rgb(14, 89, 14);}
 footer > .informations {display: flex; justify-content: space-between;}
 footer > .informations > .medias {}
-footer > .informations > .medias > img { height: 50px;}
+footer > .informations > .medias > a > img { height: 50px;}
 
 footer > .informations > .signature {}
 footer > .informations > .signature > img {height: 100px;}
