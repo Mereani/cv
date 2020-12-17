@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
    
-body{ background-image: url('../back.jpg'); animation: defile 5s infinite;}
+body{ background-image: url('../back1.jpg'); animation: defile 10s infinite;}
 header { border-bottom: 2px solid black; display: block; height: auto; text-align: center;}
 	header > h1 { font-size: 80px; display: inline-block; font-family: 'Bungee Shade', cursive;}
 	header > img { width: 140px; height: 140px; border: 2px solid black; float: right; border-radius: 50%; margin: 10%;  }
@@ -18,6 +18,16 @@ header { border-bottom: 2px solid black; display: block; height: auto; text-alig
 	.container > section > .textDuMenu {margin: 10px;}
 	.container > section > .textDuMenu > .titre > h2 {font-size: 20px;}
 
+.container > section > .experience1 {font-size: 10px; margin: 5%; display: none;} 
+.container > section > .experience1 > .titreStage1 {}
+.container > section > .experience1 > .dateStage1 {}
+.container > section > .experience1 > .competencesStage1 {}
+
+	.container > section > .experience2 {font-size: 10px; margin: 5%; display: none;}
+	.container > section > .experience2 > .titreStage2 {}
+	.container > section > .experience2 > .dateStage2 {}	
+	.container > section > .experience2 > .competencesStage2 {}
+
 footer { height: auto; background-color: rgb(14, 89, 14);}
 footer > .informations {}
 footer > .informations > .medias { display: flex; justify-content: space-evenly;}
@@ -29,5 +39,5 @@ footer > .informations > .signature > img {height: 100px;} */
 
 @keyframes defile {
 	from {background-position: 0px 0px;}
-	to {background-position: 1920px 0px;}
+	to {background-position: 2000px 0px;}
 	}
