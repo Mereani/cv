@@ -1,60 +1,54 @@
 $(document).ready(function() {
 
-  let $carrousel = $('#carrousel'), // on cible le bloc du carrousel
- 	  $img = $('#carrousel img'), // on cible les images contenues dans le carrousel
-    IndexImg = $img.length - 1, // on définit l'index du dernier élément
-    i = 0; // on initialise un compteur image
+  let $carrousel = $('#carrousel'), //cibler la div carrousel
+ 	  $img = $('#carrousel img'), //cibler les images du carrousel
+    IndexImg = $img.length - 1, //définir le dernier élément 
+    i = 0; //mettre compteur d'image
 
   function affiche() { //fonction d'affichage des images
-    $img.css('display', 'none'); // on cache les images
-    $currentImg = $img.eq(i); // on définit la nouvelle image
-    $currentImg.css('display', 'block'); // puis on l'affiche
+    $img.css('display', 'none'); //on cache les images
+    $currentImg = $img.eq(i); //on définit une image
+    $currentImg.css('display', 'block'); // et on l'affiche dans le carrousel
   }
 
-  var intervalId = null; //déclaration de ma variable intervalId contenant la fonction setInterval, sera stoppée via la fonction clearInterval
+  
+  function newImage() { //remplacer une ancienne image par une nouvelle
 
-  function finish() { //définition de la fonction finish
-    clearInterval(intervalId); //fonction qui va stopper intervalId
-  }
+    if (i < IndexImg) { // si "i" est inférieur à l'IndexImg
+      i++; //on l'incrémente
 
-  function newImage() { //fonction de remplacer l'ancienne image par une nouvelle image
-
-    if (i < IndexImg) { // si le compteur est inférieur au dernier index
-      i++; // on l'incrémente
-
-    } else { // sinon, on le remet à 0 (première image), permet le défilement infini
+    } else { //sinon, on mets la première image 
       i = 0;
     }
     affiche(); //affiche image
   }
 
-  function start() { //fonction lançant l'autoslider
-    intervalId = setInterval(newImage, 5000); //attend 2 secondes avant de lancer la fonction newImage puis se répète indéfiniment
+  function start() { //lancement du carrousel automatique
+    setInterval(newImage, 2000); //attendre toutes les 2 secondes pour que les img changent automatiquement
   }
 
+  affiche(); //on affiche la premiere image IMPORTANT, sinon on se retrouve avec les trois img en même temps
 
-  affiche(); //on affiche la premiere image
-
-  $('#prev').click(function() { // image précédente
-    if (i > 0) { // si le compteur est supérieur à l'index de départ
+  $('#prev').click(function() { 
+    if (i > 0) { // si "i est supérieur à l'IndexImg
       i--; // on décremente
 
-    } else { // sinon, on le remet à index maximum (dernière image), permet le défilement infini
-      i = IndexImg;
+    } else { 
+      i = IndexImg; 
     }
     affiche(); //affiche image
   });
 
-  $('#next').click(function() { // image suivante
-    if (i < IndexImg) { // si le compteur est inférieur au dernier index
+  $('#next').click(function() {
+    if (i < IndexImg) { // si "i" est inférieur à l'IndexImg
       i++; // on l'incrémente
 
-    } else { // sinon, on le remet à 0 (première image), permet le défilement infini
+    } else { // sinon, le mettre à la première image pour continuer la boucle
       i = 0;
     }
     affiche(); //affiche image
   });
 
-  start(); //lance une première fois l'autoslider
+  start(); //lance le carrousel automatique dès que la page est ouverte
 
 });
