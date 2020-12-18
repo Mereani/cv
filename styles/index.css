@@ -5,34 +5,34 @@ header { border-bottom: 2px solid black; display: block; height: auto; text-alig
 	header > h1 { font-size: 80px; display: inline-block; font-family: 'Bungee Shade', cursive;}
 	header > img { width: 140px; height: 140px; border: 2px solid black; float: right; border-radius: 50%; margin: 10%;  }
 
-.container {display: flex; justify-content: space-between;}
-.container > aside { border-right: 2px solid black; width: 20%; display: block; margin: auto;}
-.container > aside > h2 { font-size: 30px; margin-bottom: 25px; }
+#container {display: flex; justify-content: space-between;}
+#container > aside { border-right: 2px solid black; width: 20%; display: block; margin: auto;}
+#container > aside > h2 { font-size: 30px; margin-bottom: 25px; }
 
-	.container > section {margin-bottom: 10px; margin-top: 10px;}
-	.container > section > .carrousel { width: 640px; display: block; border: 2px solid black; margin: auto;}
-	.container > section > .carrousel > img {}
-	.container > section > .btn { display: flex; justify-content: space-evenly; margin-top: 4px;}
-	.container > section > .btn > button { font-size: 15px; cursor: pointer;}  
+	#container > section {margin-bottom: 10px; margin-top: 10px;}
+	#container > section > #carrousel { width: 640px; display: block; border: 2px solid black; margin: auto;}
+	#container > section > #carrousel > img {}
+	#container > section > #btn { display: flex; justify-content: space-evenly; margin-top: 4px;}
+	#container > section > #btn > button { font-size: 15px; cursor: pointer;}  
 
-	.container > section > .textDuMenu {margin: 10px;}
-	.container > section > .textDuMenu > .titre > h2 {font-size: 20px;}
+	#container > section > #textDuMenu {margin: 10px;}
+	#container > section > #textDuMenu > #titre > h2 {font-size: 20px;}
 
-.container > section > .experience1 {font-size: 10px; margin: 5%; display: none;} 
-.container > section > .experience1 > .titreStage1 {}
-.container > section > .experience1 > .dateStage1 {}
-.container > section > .experience1 > .competencesStage1 {}
+#container > section > #experience1 {font-size: 10px; margin: 5%; display: none;} 
+#container > section > #experience1 > #titreStage1 {}
+#container > section > #experience1 > #dateStage1 {}
+#container > section > #experience1 > #competencesStage1 {}
 
-	.container > section > .experience2 {font-size: 10px; margin: 5%; display: none;}
-	.container > section > .experience2 > .titreStage2 {}
-	.container > section > .experience2 > .dateStage2 {}	
-	.container > section > .experience2 > .competencesStage2 {}
+	#container > section > #experience2 {font-size: 10px; margin: 5%; display: none;}
+	#container > section > #experience2 > #titreStage2 {}
+	#container > section > #experience2 > #dateStage2 {}	
+	#container > section > #experience2 > #competencesStage2 {}
 
 footer { height: auto; background-color: rgb(14, 89, 14);}
-footer > .informations {}
-footer > .informations > .medias { display: flex; justify-content: space-evenly;}
-footer > .informations > .medias > a {}
-footer > .informations > .medias > a > img { height: 50px;}
+footer > #informations {}
+footer > #informations > #medias { display: flex; justify-content: space-evenly;}
+footer > #informations > #medias > a {}
+footer > #informations > #medias > a > img { height: 50px;}
 
 /* footer > .informations > .signature {}
 footer > .informations > .signature > img {height: 100px;} */
